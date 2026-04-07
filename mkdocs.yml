@@ -106,6 +106,45 @@ plugins:
 
 nav:
   - 홈: index.md
+  - 로드맵 포털:
+      - 개요: roadmap/index.md
+      - "프론트엔드":
+          - React: roadmap/frontend/react/index.md
+          - Next.js: roadmap/frontend/nextjs/index.md
+          - Tailwind CSS: roadmap/frontend/tailwind/index.md
+          - Zustand: roadmap/frontend/zustand/index.md
+      - "백엔드":
+          - Spring Boot: roadmap/backend/springboot/index.md
+          - FastAPI: roadmap/backend/fastapi/index.md
+          - NestJS: roadmap/backend/nestjs/index.md
+          - Django: roadmap/backend/django/index.md
+          - Express: roadmap/backend/express/index.md
+      - "AI / 데이터":
+          - LangChain: roadmap/ai-ml/langchain/index.md
+          - AutoGPT: roadmap/ai-ml/autogpt/index.md
+          - PyTorch: roadmap/ai-ml/pytorch/index.md
+          - Transformers: roadmap/ai-ml/transformers/index.md
+          - Pandas: roadmap/ai-ml/pandas/index.md
+      - "DevOps / 클라우드":
+          - Kubernetes: roadmap/devops-cloud/kubernetes/index.md
+          - Docker: roadmap/devops-cloud/docker/index.md
+          - Terraform: roadmap/devops-cloud/terraform/index.md
+          - Ansible: roadmap/devops-cloud/ansible/index.md
+          - Prometheus: roadmap/devops-cloud/prometheus/index.md
+      - "데이터베이스":
+          - PostgreSQL: roadmap/db-data/postgres/index.md
+          - Redis: roadmap/db-data/redis/index.md
+          - Elasticsearch: roadmap/db-data/elasticsearch/index.md
+          - Kafka: roadmap/db-data/kafka/index.md
+      - "보안":
+          - OWASP: roadmap/security/owasp/index.md
+      - "CS 기초":
+          - OSSU: roadmap/cs-fundamentals/ossu/index.md
+          - Coding Interview University: roadmap/cs-fundamentals/interview-university/index.md
+          - Algorithms (Python): roadmap/cs-fundamentals/algorithms/index.md
+          - Developer Roadmap: roadmap/cs-fundamentals/roadmap/index.md
+          - System Design Primer: roadmap/cs-fundamentals/system-design/index.md
+  - 다운로드: downloads.md
   - "Part 1: 개발 기초":
       - 개요: part1-foundation/index.md
       - "1-1. CS 기초 다지기": part1-foundation/01-cs-basics.md

@@ -24,10 +24,24 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      - name: WeasyPrint 시스템 의존성 설치 (GTK / Pango)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libcairo2
+
       - name: 의존성 설치
         run: |
           pip install --upgrade pip
           pip install -r scripts/requirements.txt
+
+      - name: 오프라인 산출물 빌드 (MD + DOCX + PDF)
+        run: python scripts/build_guidebook.py --format all
+
+      - name: 다운로드 에셋 복사 (docs/assets/downloads)
+        run: |
+          mkdir -p docs/assets/downloads
+          cp output/Guidebook.pdf docs/assets/downloads/Guidebook.pdf
+          cp output/Guidebook.docx docs/assets/downloads/Guidebook.docx
 
       - name: MkDocs 빌드 검증
         run: mkdocs build --strict

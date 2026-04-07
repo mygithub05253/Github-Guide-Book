@@ -10,6 +10,66 @@
 
 ---
 
+## 🌐 로드맵 포털: 카테고리별 딥다이브 (NEW)
+
+[roadmap.sh](https://roadmap.sh) 커리큘럼을 기준으로 분야별 핵심 오픈소스 레포지토리를 카드형 UI로 탐색하세요. 각 카드는 **"왜 쓰는가 → 10분 퀵스타트 → 코드 해부학 → AI 프롬프트 팩"** 표준 템플릿을 따릅니다.
+
+<div class="grid cards" markdown>
+
+-   :material-react: __프론트엔드__
+
+    ---
+
+    React, Next.js, Tailwind, Zustand
+
+    [:octicons-arrow-right-24: 카테고리 보기](roadmap/index.md)
+
+-   :material-api: __백엔드__
+
+    ---
+
+    Spring Boot, FastAPI, NestJS, Django, Express
+
+    [:octicons-arrow-right-24: 카테고리 보기](roadmap/index.md)
+
+-   :material-robot-outline: __AI / 데이터__
+
+    ---
+
+    LangChain, AutoGPT, PyTorch, Transformers, Pandas
+
+    [:octicons-arrow-right-24: 카테고리 보기](roadmap/index.md)
+
+-   :material-kubernetes: __DevOps / 클라우드__
+
+    ---
+
+    Kubernetes, Docker, Terraform, Ansible, Prometheus
+
+    [:octicons-arrow-right-24: 카테고리 보기](roadmap/index.md)
+
+-   :simple-postgresql: __DB / 스트리밍__
+
+    ---
+
+    PostgreSQL, Redis, Elasticsearch, Kafka
+
+    [:octicons-arrow-right-24: 카테고리 보기](roadmap/index.md)
+
+-   :material-school: __CS 기초 & 보안__
+
+    ---
+
+    OSSU, Coding Interview University, System Design, OWASP
+
+    [:octicons-arrow-right-24: 카테고리 보기](roadmap/index.md)
+
+</div>
+
+[:material-download: 오프라인 PDF/DOCX 다운로드](downloads.md){ .md-button .md-button--primary }
+
+---
+
 ## 이 가이드북을 한 문장으로 요약하면
 
 "**10,000 Stars 이상의 GitHub 레포지토리 중 진짜 쓸 만한 것들을, 비전공자도 바로 따라 할 수 있게 실습 위주로 정리한 선배의 과외 노트**"입니다.

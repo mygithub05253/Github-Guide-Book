@@ -1,0 +1,159 @@
+site_name: GitHub 인기 레포지토리 & AI 개발 도구 완전 활용 가이드북
+site_description: 대학생 개발자를 위한 실전 GitHub 레포지토리 활용 가이드 (Claude Code + GSTACK + MCP)
+site_author: mygithub05253
+site_url: https://mygithub05253.github.io/Github-Guide-Book/
+repo_url: https://github.com/mygithub05253/Github-Guide-Book
+repo_name: mygithub05253/Github-Guide-Book
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 mygithub05253
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.instant       # SPA 스타일 즉시 로딩
+    - navigation.tracking      # 스크롤에 따라 URL 갱신
+    - navigation.tabs          # 상단 탭으로 파트 구분
+    - navigation.sections      # 사이드바 섹션 그룹화
+    - navigation.expand        # 사이드바 자동 펼치기
+    - navigation.indexes       # 섹션 index.md 지원
+    - navigation.top           # "맨 위로" 버튼
+    - navigation.footer        # 이전/다음 페이지 푸터
+    - search.suggest           # 검색어 자동완성
+    - search.highlight         # 검색 결과 하이라이트
+    - search.share             # 검색 결과 공유 링크
+    - toc.follow               # 우측 목차 스크롤 따라가기
+    - content.code.copy        # 코드 블록 복사 버튼
+    - content.code.annotate    # 코드 주석 인터랙티브
+    - content.tabs.link        # 탭 동기화
+    - content.action.edit      # "이 페이지 수정" 링크
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+
+# 마크다운 확장 (admonition, codeblocks, tabs 등)
+markdown_extensions:
+  - abbr
+  - admonition                  # !!! note 콜아웃
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details            # 접을 수 있는 콜아웃
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys               # ++ctrl+c++ 키보드 표시
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:       # 중첩 코드/다이어그램 지원
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true     # 탭 그룹
+  - pymdownx.tasklist:
+      custom_checkbox: true     # - [ ] 체크박스 스타일링
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang:
+        - ko
+        - en
+  # awesome-pages: .pages 파일로 nav 자동 구성 (Phase 1 후반에 활용)
+  # - awesome-pages
+  # mkdocs-with-pdf: 한 권의 PDF 동시 생성 (Phase 6에서 활성화)
+  # - with-pdf:
+  #     output_path: ../output/Guidebook.pdf
+  #     cover_title: GitHub 인기 레포지토리 & AI 개발 도구 활용 가이드북
+  #     cover_subtitle: 대학생 개발자를 위한 실전 매뉴얼
+
+nav:
+  - 홈: index.md
+  - "Part 1: 개발 기초":
+      - 개요: part1-foundation/index.md
+      - "1-1. CS 기초 다지기": part1-foundation/01-cs-basics.md
+      - "1-2. 코딩 입문": part1-foundation/02-coding-entry.md
+      - "1-3. 면접 준비": part1-foundation/03-interview-prep.md
+      - "1-4. 데이터 분석": part1-foundation/04-data-analysis.md
+  - "Part 2: 프레임워크":
+      - 개요: part2-frameworks/index.md
+      - "2-1. Spring Boot": part2-frameworks/01-spring-boot.md
+      - "2-2. React": part2-frameworks/02-react.md
+      - "2-3. Next.js": part2-frameworks/03-nextjs.md
+      - 학습 체크리스트: part2-frameworks/04-checklist.md
+  - "Part 3: 프로젝트/공모전":
+      - 개요: part3-projects/index.md
+      - "3-1. 풀스택 템플릿": part3-projects/01-fullstack-templates.md
+      - "3-2. 포트폴리오/오픈소스": part3-projects/02-portfolio-opensource.md
+      - "3-3. 해커톤": part3-projects/03-hackathon.md
+  - "Part 4: 문서 처리 라이브러리":
+      - 개요: part4-document-libraries/index.md
+      - "4-1. Python 라이브러리": part4-document-libraries/01-python.md
+      - "4-2. Java 라이브러리": part4-document-libraries/02-java.md
+      - "4-3. JavaScript 라이브러리": part4-document-libraries/03-javascript.md
+      - "4-4. 자동화 파이프라인": part4-document-libraries/04-pipeline.md
+  - "Part 5: AI 개발 도구":
+      - 개요: part5-ai-tools/index.md
+      - "5-1. 핵심 MCP 서버": part5-ai-tools/01-mcp-core.md
+      - "5-2. 생산성 MCP 서버": part5-ai-tools/02-mcp-productivity.md
+      - "5-3. MCP 조합 전략": part5-ai-tools/03-mcp-strategy.md
+      - "5-4. GSTACK 설치": part5-ai-tools/04-gstack-install.md
+      - "5-5. GSTACK 역할별 가이드": part5-ai-tools/05-gstack-roles.md
+      - "5-6. GSTACK + MCP 시너지": part5-ai-tools/06-gstack-mcp-synergy.md
+      - "5-7. Plan 모드 & Sequential Thinking": part5-ai-tools/07-plan-sequential.md
+      - "5-8. 실전 통합 사례": part5-ai-tools/08-real-cases.md
+      - "5-9. 베스트 프랙티스": part5-ai-tools/09-best-practices.md
+  - "Part 6: 취업 준비":
+      - 개요: part6-career/index.md
+      - "6-1. 기술 면접 준비": part6-career/01-tech-interview.md
+      - "6-2. 금융/공기업 취업": part6-career/02-finance-public.md
+  - 부록:
+      - 개요: appendix/index.md
+      - "A. Plan 모드 가이드": appendix/plan-mode.md
+      - "B. Sequential Thinking 가이드": appendix/sequential-thinking.md
+      - "C. 학습 로드맵": appendix/learning-roadmap.md
+      - "D. 리소스 링크": appendix/resources.md
+      - "E. 빌드 파이프라인": appendix/build-pipeline.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mygithub05253/Github-Guide-Book
+  generator: false

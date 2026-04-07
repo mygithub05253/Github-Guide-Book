@@ -13,3 +13,9 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# MkDocs 빌드 산출물 (mkdocs build로 재생성)
+site/
+
+# Node (prettier/markdownlint 글로벌 설치라 로컬 node_modules 없음)
+node_modules/
